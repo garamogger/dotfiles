@@ -20,7 +20,6 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh &
 # autotiling
 exec_always --no-startup-id $HOME/.local/bin/autotiling &
 
-exec --no-startup-id /usr/bin/touch /tmp/i3-test && /home/garamog/Scripts/launch-borders
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
@@ -256,7 +255,7 @@ bindsym $mod+r mode "resize"
 # gaps/borders
 gaps inner 6px
 hide_edge_borders both
-for_window [class=".*"] border pixel 0
+for_window [class=".*"] border pixel 2
 
 
 # class                 border  backgr. text    indicator child_border

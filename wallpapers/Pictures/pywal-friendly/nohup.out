@@ -1,0 +1,32 @@
+WARNING: Setting startup_notification in section global doesn't exist
+WARNING: Setting verbosity in section global doesn't exist
+WARNING: Setting geometry in section global doesn't exist
+WARNING: Setting notification_height in section global doesn't exist
+WARNING: Section shortcuts is deprecated.
+Settings in the shortcuts sections have been moved to the global section.
+Alternatively you can bind shortcuts in your window manager to dunstctl commands. For that, see the manual for dunstctl.
+Ignoring this section.
+WARNING: Icon 'dialog-ok' not found in icon_path
+WARNING: Icon 'dialog-ok' not found in icon_path
+WARNING: BadWindow (invalid Window parameter)
+WARNING: BadWindow (invalid Window parameter)
+WARNING: BadWindow (invalid Window parameter)
+WARNING: Icon 'kdeconnect' not found in icon_path
+WARNING: Icon 'kdeconnect' not found in icon_path
+WARNING: Icon 'kdeconnect' not found in icon_path
+WARNING: Icon 'kdeconnect' not found in icon_path
+WARNING: Icon 'kdeconnect' not found in icon_path
+WARNING: Icon 'kdeconnect' not found in icon_path
+WARNING: Icon 'kdeconnect' not found in icon_path
+WARNING: Icon 'kdeconnect' not found in icon_path
+WARNING: Icon 'kdeconnect' not found in icon_path
+WARNING: Icon 'kdeconnect' not found in icon_path
+WARNING: Icon 'kdeconnect' not found in icon_path
+WARNING: Icon 'kdeconnect' not found in icon_path
+WARNING: Icon 'kdeconnect' not found in icon_path
+WARNING: Icon 'kdeconnect' not found in icon_path
+WARNING: Icon 'kdeconnect' not found in icon_path
+WARNING: Icon 'kdeconnect' not found in icon_path
+WARNING: Icon 'kdeconnect' not found in icon_path
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 126565 requests (126565 known processed) with 0 events remaining.

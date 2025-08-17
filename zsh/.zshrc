@@ -98,6 +98,7 @@ function y() {
 
 export PATH=":$HOME/Scripts:$PATH"
 export PATH=":$HOME/.local/bin:$PATH"
+export PATH=":$HOME/.emacs.d/bin:$PATH"
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 eval $(thefuck --alias)

@@ -3,5 +3,5 @@ edit = [
 	{ run = 'nvim "$@"', block = true },
 ]
 play = [
-	{ run = 'vlc "$@"', orphan = true, for = "unix" },
+	{ run = 'mpv "$@"', orphan = true, for = "unix" },
 ]

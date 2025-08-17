@@ -1,0 +1,5 @@
+[plugin]
+deps = [{ use = "gesellkammer/audio-preview", commit = "dba89bb" }]
+
+[flavor]
+deps = []

@@ -1,2 +1,0 @@
-/home/garamog/.local/bin/xborders:284: DeprecationWarning: Gtk.Window.set_wmclass is deprecated
-  self.set_wmclass("xborders", "xborder")

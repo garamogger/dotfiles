@@ -7,3 +7,5 @@ alias cpick="$HOME/Downloads/colorpicker/colorpicker/colorpicker"
 alias border="nohup xborder/xborders --border-radius 20 --border-rgba #89B4FA"
 alias ls="eza --icons"
 alias ops="fuck"
+alias emacs='emacsclient -c -a "emacs"'
+alias cat='bat'

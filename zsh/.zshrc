@@ -98,7 +98,7 @@ function y() {
 
 export PATH=":$HOME/Scripts:$PATH"
 export PATH=":$HOME/.local/bin:$PATH"
-export PATH=":$HOME/.emacs.d/bin:$PATH"
+export PATH=":$HOME/.config/emacs/bin:$PATH"
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 eval $(thefuck --alias)
@@ -133,3 +133,11 @@ wal-tile() {
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 # changes `accept` to ctrl + space
 bindkey '^ ' autosuggest-accept
+
+# pnpm
+export PNPM_HOME="/home/garamog/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end

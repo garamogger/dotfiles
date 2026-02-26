@@ -1,0 +1,60 @@
+-- Disabled in favor of avante.nvim's Copilot integration
+-- return {
+--   "github/copilot.vim"
+-- }
+-- Configuration for GitHub Copilot
+-- return {
+--   {
+--     "zbirenbaum/copilot.lua",
+--     cmd = "Copilot",
+--     event = "InsertEnter",
+--     config = function()
+--       require("copilot").setup({
+--         suggestion = {
+--           enabled = true,
+--           auto_trigger = true,
+--           debounce = 150,
+--           keymap = {
+--             accept = "<C-CR>",
+--             accept_word = "<C-Right>",
+--             accept_line = "<C-j>",
+--             next = "<M-]>",
+--             prev = "<M-[>",
+--             dismiss = "<C-]>",
+--           },
+--         },
+--         panel = {
+--           enabled = true,
+--         },
+--       })
+--     end,
+--   },
+--
+--   {
+--     {
+--       "yetone/avante.nvim",
+--       config = function()
+--         require("avante").setup({
+--           -- Default Copilot agent set to GPT-4.1
+--           provider = "copilot",
+--           model = "gpt-4.1",
+--         })
+--       end,
+--       dependencies = {
+--         -- load copilot.lua first
+--         {
+--           "zbirenbaum/copilot.lua",
+--           config = function()
+--             require("copilot").setup({
+--               panel      = { enabled = true },
+--               suggestion = { enabled = true },
+--             })
+--           end,
+--         },
+--       },
+--     },
+--   }
+-- }
+
+
+return {}

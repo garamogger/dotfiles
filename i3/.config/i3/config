@@ -9,7 +9,7 @@
 
 set $mod Mod4
 
-font pango:Fira Mono for Powerline 16
+font pango:Fira Mono for Powerline 12
 
 exec --no-startup-id picom 
 exec --no-startup-id dex-autostart --autostart --environment i3
@@ -51,14 +51,17 @@ floating_modifier $mod
 # or left-clicking anywhere into the window while holding the floating modifier.
 tiling_drag modifier titlebar
 
-# ---------------------------------------Custom Bindings---------------------------------------
+# --##################################### Custom Bindings #####################################-- #
 
 # open kitty
 bindsym $mod+Return exec kitty
+
 # open yazi
 bindsym $mod+y exec kitty -e yazi
+
 # open newsboat
 bindsym $mod+n exec kitty -e newsboat
+
 # open cmus
 bindsym $mod+m exec kitty -e cmus
 
@@ -66,6 +69,10 @@ bindsym $mod+m exec kitty -e cmus
 bindsym $mod+w exec librewolf
 bindsym $mod+Shift+w exec mullvad-browser
 bindsym $mod+b exec brave-browser
+
+# open emacs
+bindsym $mod+e exec emacs-gtk+x11
+
 
 # start 
 bindsym $mod+o exec flatpak run md.obsidian.Obsidian
@@ -143,7 +150,7 @@ bindsym $mod+f fullscreen toggle
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
 bindsym $mod+t layout tabbed
-bindsym $mod+e layout toggle split
+bindsym $mod+Shift+e layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
@@ -254,8 +261,8 @@ bindsym $mod+r mode "resize"
 
 # gaps/borders
 gaps inner 6px
-hide_edge_borders both
-for_window [class=".*"] border pixel 2
+# hide_edge_borders both
+for_window [class=".*"] border pixel 1
 
 
 # class                 border  backgr. text    indicator child_border
@@ -285,3 +292,5 @@ set_from_resource $bg i3wm.color0 #f0f0f0
  client.placeholder      $bg     $bg     $fg  $bg       $bg
 #
 # client.background       $bg
+
+exec --no-startup-id /usr/bin/emacs --daemon

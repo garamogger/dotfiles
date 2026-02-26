@@ -15,7 +15,7 @@ wal_tile() {
   fi
 
   # Run the feh command with error handling
-  if ! feh --bg-center "$(cat "${wallpaper_file}")"; then
+  if ! feh --bg-scale "$(cat "${wallpaper_file}")"; then
     echo "Error: Failed to run feh command"
     return 1
   fi
